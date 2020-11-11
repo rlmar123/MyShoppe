@@ -256,7 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ProducyCatrgory\" />
+    <Folder Include="Views\Images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -22,9 +23,16 @@ namespace MyShoppe.WebUI.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact Info";
 
             return View();
+        }
+
+        public ActionResult GetImage(string id)
+        {
+            var dir = Server.MapPath("/Images");
+            var path = Path.Combine(dir, id + "hulk.jpg");
+            return base.File(path, "image/jpeg");
         }
     }
 }
