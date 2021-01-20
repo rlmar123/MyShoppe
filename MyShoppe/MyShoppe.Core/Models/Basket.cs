@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyShoppe.Core.Models
 {
+    // start video 75
     public class Basket : BaseEntity
     {
         public virtual ICollection<BasketItem> BasketItems { get; set; }
